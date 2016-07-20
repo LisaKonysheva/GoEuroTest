@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1535F6E11D3BCF2D0090BFA8 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1535F6E01D3BCF2D0090BFA8 /* Reachability.m */; };
+		1535F6E51D3BD0850090BFA8 /* GEUNoConnectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1535F6E41D3BD0850090BFA8 /* GEUNoConnectionView.m */; };
+		1535F6E71D3BD0B70090BFA8 /* GEUNoConnectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1535F6E61D3BD0B70090BFA8 /* GEUNoConnectionView.xib */; };
+		1560DBDD1D35180000A63CD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1560DBDC1D35180000A63CD6 /* main.m */; };
+		1560DBE01D35180000A63CD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1560DBDF1D35180000A63CD6 /* AppDelegate.m */; };
+		1560DBE61D35180000A63CD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1560DBE41D35180000A63CD6 /* Main.storyboard */; };
+		1560DBE81D35180000A63CD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1560DBE71D35180000A63CD6 /* Assets.xcassets */; };
+		1560DBEB1D35180000A63CD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1560DBE91D35180000A63CD6 /* LaunchScreen.storyboard */; };
+		1560DBF51D3519EA00A63CD6 /* GEUTrip.m in Sources */ = {isa = PBXBuildFile; fileRef = 1560DBF41D3519EA00A63CD6 /* GEUTrip.m */; };
+		1560DBFD1D351B3100A63CD6 /* GEUConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1560DBFC1D351B3100A63CD6 /* GEUConstants.m */; };
+		1560DC001D351D1700A63CD6 /* GEUDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1560DBFF1D351D1700A63CD6 /* GEUDataService.m */; };
+		1560DC071D35517A00A63CD6 /* GEUUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1560DC061D35517A00A63CD6 /* GEUUtils.m */; };
+		1560DC0B1D36682C00A63CD6 /* GEUContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1560DC0A1D36682C00A63CD6 /* GEUContainerController.m */; };
+		1560DC0D1D3A47E900A63CD6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1560DC0C1D3A47E900A63CD6 /* Localizable.strings */; };
+		1560DC0F1D3A48BC00A63CD6 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 1560DC0E1D3A48BC00A63CD6 /* Localizable.stringsdict */; };
+		1560DC171D3A6DA600A63CD6 /* GEUBarMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1560DC161D3A6DA600A63CD6 /* GEUBarMenu.m */; };
+		1560DC1D1D3B6D2500A63CD6 /* GEUShyBarBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 1560DC1C1D3B6D2500A63CD6 /* GEUShyBarBehavior.m */; };
+		157A25691D3B796A00C1C9F4 /* GEUBaseBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 157A25681D3B796A00C1C9F4 /* GEUBaseBehavior.m */; };
+		157A256C1D3B7A6100C1C9F4 /* GEUProxyBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 157A256B1D3B7A6100C1C9F4 /* GEUProxyBehavior.m */; };
+		157BB3951D36CBE7005F340D /* GEUTravelModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 157BB3941D36CBE7005F340D /* GEUTravelModeViewController.m */; };
+		157BB3991D36D661005F340D /* GEUTravelModeVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 157BB3981D36D661005F340D /* GEUTravelModeVM.m */; };
+		157BB39D1D381B5F005F340D /* GEUTripCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 157BB39C1D381B5F005F340D /* GEUTripCell.m */; };
+		157BB39F1D381B75005F340D /* GEUTripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157BB39E1D381B75005F340D /* GEUTripCell.xib */; };
+		157BB3A21D381DBD005F340D /* GEUTripCellVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 157BB3A11D381DBD005F340D /* GEUTripCellVM.m */; };
+		B6CFBB31279D918D62E3FAA8 /* libPods-GoEuroTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE64EF0AB014F694267B1785 /* libPods-GoEuroTest.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1535F6DF1D3BCF2D0090BFA8 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = DataLayer/Reachability.h; sourceTree = "<group>"; };
+		1535F6E01D3BCF2D0090BFA8 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = DataLayer/Reachability.m; sourceTree = "<group>"; };
+		1535F6E31D3BD0850090BFA8 /* GEUNoConnectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEUNoConnectionView.h; path = Common/GEUNoConnectionView.h; sourceTree = "<group>"; };
+		1535F6E41D3BD0850090BFA8 /* GEUNoConnectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GEUNoConnectionView.m; path = Common/GEUNoConnectionView.m; sourceTree = "<group>"; };
+		1535F6E61D3BD0B70090BFA8 /* GEUNoConnectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GEUNoConnectionView.xib; path = Common/GEUNoConnectionView.xib; sourceTree = "<group>"; };
+		1560DBD81D35180000A63CD6 /* GoEuroTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoEuroTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1560DBDC1D35180000A63CD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1560DBDE1D35180000A63CD6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1560DBDF1D35180000A63CD6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1560DBE51D35180000A63CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1560DBE71D35180000A63CD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1560DBEA1D35180000A63CD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1560DBEC1D35180000A63CD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1560DBF31D3519EA00A63CD6 /* GEUTrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEUTrip.h; path = Model/GEUTrip.h; sourceTree = "<group>"; };
+		1560DBF41D3519EA00A63CD6 /* GEUTrip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GEUTrip.m; path = Model/GEUTrip.m; sourceTree = "<group>"; };
+		1560DBFB1D351B3100A63CD6 /* GEUConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEUConstants.h; path = DataLayer/GEUConstants.h; sourceTree = "<group>"; };
+		1560DBFC1D351B3100A63CD6 /* GEUConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GEUConstants.m; path = DataLayer/GEUConstants.m; sourceTree = "<group>"; };
+		1560DBFE1D351D1700A63CD6 /* GEUDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEUDataService.h; path = DataLayer/GEUDataService.h; sourceTree = "<group>"; };
+		1560DBFF1D351D1700A63CD6 /* GEUDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GEUDataService.m; path = DataLayer/GEUDataService.m; sourceTree = "<group>"; };
+		1560DC051D35517A00A63CD6 /* GEUUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEUUtils.h; path = Common/GEUUtils.h; sourceTree = "<group>"; };
+		1560DC061D35517A00A63CD6 /* GEUUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GEUUtils.m; path = Common/GEUUtils.m; sourceTree = "<group>"; };
+		1560DC091D36682C00A63CD6 /* GEUContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEUContainerController.h; path = Controllers/GEUContainerController.h; sourceTree = "<group>"; };
+		1560DC0A1D36682C00A63CD6 /* GEUContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GEUContainerController.m; path = Controllers/GEUContainerController.m; sourceTree = "<group>"; };
+		1560DC0C1D3A47E900A63CD6 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Common/Localizable.strings; sourceTree = "<group>"; };
+		1560DC0E1D3A48BC00A63CD6 /* Localizable.stringsdict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = Common/Localizable.stringsdict; sourceTree = "<group>"; };
+		1560DC151D3A6DA600A63CD6 /* GEUBarMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEUBarMenu.h; path = Controllers/GEUBarMenu.h; sourceTree = "<group>"; };
+		1560DC161D3A6DA600A63CD6 /* GEUBarMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GEUBarMenu.m; path = Controllers/GEUBarMenu.m; sourceTree = "<group>"; };
+		1560DC181D3A72C400A63CD6 /* GEUTopMenuDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEUTopMenuDelegate.h; path = Controllers/GEUTopMenuDelegate.h; sourceTree = "<group>"; };
+		1560DC1B1D3B6D2500A63CD6 /* GEUShyBarBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEUShyBarBehavior.h; path = Common/GEUShyBarBehavior.h; sourceTree = "<group>"; };
+		1560DC1C1D3B6D2500A63CD6 /* GEUShyBarBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GEUShyBarBehavior.m; path = Common/GEUShyBarBehavior.m; sourceTree = "<group>"; };
+		157A25671D3B796A00C1C9F4 /* GEUBaseBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEUBaseBehavior.h; path = Common/GEUBaseBehavior.h; sourceTree = "<group>"; };
+		157A25681D3B796A00C1C9F4 /* GEUBaseBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GEUBaseBehavior.m; path = Common/GEUBaseBehavior.m; sourceTree = "<group>"; };
+		157A256A1D3B7A6100C1C9F4 /* GEUProxyBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEUProxyBehavior.h; path = Common/GEUProxyBehavior.h; sourceTree = "<group>"; };
+		157A256B1D3B7A6100C1C9F4 /* GEUProxyBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GEUProxyBehavior.m; path = Common/GEUProxyBehavior.m; sourceTree = "<group>"; };
+		157BB3931D36CBE7005F340D /* GEUTravelModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEUTravelModeViewController.h; path = Controllers/GEUTravelModeViewController.h; sourceTree = "<group>"; };
+		157BB3941D36CBE7005F340D /* GEUTravelModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GEUTravelModeViewController.m; path = Controllers/GEUTravelModeViewController.m; sourceTree = "<group>"; };
+		157BB3971D36D661005F340D /* GEUTravelModeVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEUTravelModeVM.h; path = Controllers/GEUTravelModeVM.h; sourceTree = "<group>"; };
+		157BB3981D36D661005F340D /* GEUTravelModeVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GEUTravelModeVM.m; path = Controllers/GEUTravelModeVM.m; sourceTree = "<group>"; };
+		157BB39B1D381B5F005F340D /* GEUTripCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEUTripCell.h; path = Controllers/Cells/GEUTripCell.h; sourceTree = "<group>"; };
+		157BB39C1D381B5F005F340D /* GEUTripCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GEUTripCell.m; path = Controllers/Cells/GEUTripCell.m; sourceTree = "<group>"; };
+		157BB39E1D381B75005F340D /* GEUTripCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GEUTripCell.xib; path = Controllers/Cells/GEUTripCell.xib; sourceTree = "<group>"; };
+		157BB3A01D381DBD005F340D /* GEUTripCellVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEUTripCellVM.h; path = Controllers/Cells/GEUTripCellVM.h; sourceTree = "<group>"; };
+		157BB3A11D381DBD005F340D /* GEUTripCellVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GEUTripCellVM.m; path = Controllers/Cells/GEUTripCellVM.m; sourceTree = "<group>"; };
+		7E76FC0EFA6AAD6CB532E3DE /* Pods-GoEuroTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEuroTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoEuroTest/Pods-GoEuroTest.debug.xcconfig"; sourceTree = "<group>"; };
+		AE64EF0AB014F694267B1785 /* libPods-GoEuroTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoEuroTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9DA2A6128E0E2C92D507813 /* Pods-GoEuroTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoEuroTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoEuroTest/Pods-GoEuroTest.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1560DBD51D35180000A63CD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6CFBB31279D918D62E3FAA8 /* libPods-GoEuroTest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1535F6E21D3BD0630090BFA8 /* NoConnectionView */ = {
+			isa = PBXGroup;
+			children = (
+				1535F6E31D3BD0850090BFA8 /* GEUNoConnectionView.h */,
+				1535F6E41D3BD0850090BFA8 /* GEUNoConnectionView.m */,
+				1535F6E61D3BD0B70090BFA8 /* GEUNoConnectionView.xib */,
+			);
+			name = NoConnectionView;
+			sourceTree = "<group>";
+		};
+		1560DBCF1D35180000A63CD6 = {
+			isa = PBXGroup;
+			children = (
+				1560DBDA1D35180000A63CD6 /* GoEuroTest */,
+				1560DBD91D35180000A63CD6 /* Products */,
+				9A0D2769B18FA474774D9DAF /* Pods */,
+				FB344B20289A1DE213DC2AAF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1560DBD91D35180000A63CD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1560DBD81D35180000A63CD6 /* GoEuroTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1560DBDA1D35180000A63CD6 /* GoEuroTest */ = {
+			isa = PBXGroup;
+			children = (
+				1560DC081D3667FA00A63CD6 /* Controllers */,
+				1560DC011D35502600A63CD6 /* Utils */,
+				1560DBF61D351A9A00A63CD6 /* DataLayer */,
+				1560DBF21D35181200A63CD6 /* Model */,
+				1560DBDE1D35180000A63CD6 /* AppDelegate.h */,
+				1560DBDF1D35180000A63CD6 /* AppDelegate.m */,
+				1560DBE41D35180000A63CD6 /* Main.storyboard */,
+				1560DBDB1D35180000A63CD6 /* Supporting Files */,
+			);
+			path = GoEuroTest;
+			sourceTree = "<group>";
+		};
+		1560DBDB1D35180000A63CD6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1560DBE71D35180000A63CD6 /* Assets.xcassets */,
+				1560DBE91D35180000A63CD6 /* LaunchScreen.storyboard */,
+				1560DBEC1D35180000A63CD6 /* Info.plist */,
+				1560DBDC1D35180000A63CD6 /* main.m */,
+				1560DC0C1D3A47E900A63CD6 /* Localizable.strings */,
+				1560DC0E1D3A48BC00A63CD6 /* Localizable.stringsdict */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1560DBF21D35181200A63CD6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1560DBF31D3519EA00A63CD6 /* GEUTrip.h */,
+				1560DBF41D3519EA00A63CD6 /* GEUTrip.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1560DBF61D351A9A00A63CD6 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				1535F6DF1D3BCF2D0090BFA8 /* Reachability.h */,
+				1535F6E01D3BCF2D0090BFA8 /* Reachability.m */,
+				1560DBFB1D351B3100A63CD6 /* GEUConstants.h */,
+				1560DBFC1D351B3100A63CD6 /* GEUConstants.m */,
+				1560DBFE1D351D1700A63CD6 /* GEUDataService.h */,
+				1560DBFF1D351D1700A63CD6 /* GEUDataService.m */,
+			);
+			name = DataLayer;
+			sourceTree = "<group>";
+		};
+		1560DC011D35502600A63CD6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1535F6E21D3BD0630090BFA8 /* NoConnectionView */,
+				1560DC1A1D3B6D0300A63CD6 /* ShyBarBehavior */,
+				1560DC051D35517A00A63CD6 /* GEUUtils.h */,
+				1560DC061D35517A00A63CD6 /* GEUUtils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		1560DC081D3667FA00A63CD6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1560DC191D3B6C9D00A63CD6 /* ContainerController */,
+				1560DC141D3A6D9000A63CD6 /* BarMenu */,
+				157BB3961D36D61A005F340D /* TravelModeController */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1560DC141D3A6D9000A63CD6 /* BarMenu */ = {
+			isa = PBXGroup;
+			children = (
+				1560DC151D3A6DA600A63CD6 /* GEUBarMenu.h */,
+				1560DC161D3A6DA600A63CD6 /* GEUBarMenu.m */,
+				1560DC181D3A72C400A63CD6 /* GEUTopMenuDelegate.h */,
+			);
+			name = BarMenu;
+			sourceTree = "<group>";
+		};
+		1560DC191D3B6C9D00A63CD6 /* ContainerController */ = {
+			isa = PBXGroup;
+			children = (
+				1560DC091D36682C00A63CD6 /* GEUContainerController.h */,
+				1560DC0A1D36682C00A63CD6 /* GEUContainerController.m */,
+			);
+			name = ContainerController;
+			sourceTree = "<group>";
+		};
+		1560DC1A1D3B6D0300A63CD6 /* ShyBarBehavior */ = {
+			isa = PBXGroup;
+			children = (
+				157A25671D3B796A00C1C9F4 /* GEUBaseBehavior.h */,
+				157A25681D3B796A00C1C9F4 /* GEUBaseBehavior.m */,
+				1560DC1B1D3B6D2500A63CD6 /* GEUShyBarBehavior.h */,
+				1560DC1C1D3B6D2500A63CD6 /* GEUShyBarBehavior.m */,
+				157A256A1D3B7A6100C1C9F4 /* GEUProxyBehavior.h */,
+				157A256B1D3B7A6100C1C9F4 /* GEUProxyBehavior.m */,
+			);
+			name = ShyBarBehavior;
+			sourceTree = "<group>";
+		};
+		157BB3961D36D61A005F340D /* TravelModeController */ = {
+			isa = PBXGroup;
+			children = (
+				157BB39A1D381B31005F340D /* Cells */,
+				157BB3931D36CBE7005F340D /* GEUTravelModeViewController.h */,
+				157BB3941D36CBE7005F340D /* GEUTravelModeViewController.m */,
+				157BB3971D36D661005F340D /* GEUTravelModeVM.h */,
+				157BB3981D36D661005F340D /* GEUTravelModeVM.m */,
+			);
+			name = TravelModeController;
+			sourceTree = "<group>";
+		};
+		157BB39A1D381B31005F340D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				157BB39B1D381B5F005F340D /* GEUTripCell.h */,
+				157BB39C1D381B5F005F340D /* GEUTripCell.m */,
+				157BB39E1D381B75005F340D /* GEUTripCell.xib */,
+				157BB3A01D381DBD005F340D /* GEUTripCellVM.h */,
+				157BB3A11D381DBD005F340D /* GEUTripCellVM.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		9A0D2769B18FA474774D9DAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E76FC0EFA6AAD6CB532E3DE /* Pods-GoEuroTest.debug.xcconfig */,
+				C9DA2A6128E0E2C92D507813 /* Pods-GoEuroTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FB344B20289A1DE213DC2AAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE64EF0AB014F694267B1785 /* libPods-GoEuroTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1560DBD71D35180000A63CD6 /* GoEuroTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1560DBEF1D35180000A63CD6 /* Build configuration list for PBXNativeTarget "GoEuroTest" */;
+			buildPhases = (
+				3F195BC18BE3F84AAE284DCC /* 📦 Check Pods Manifest.lock */,
+				1560DBD41D35180000A63CD6 /* Sources */,
+				1560DBD51D35180000A63CD6 /* Frameworks */,
+				1560DBD61D35180000A63CD6 /* Resources */,
+				32617ECDB91770901917D77F /* 📦 Embed Pods Frameworks */,
+				2F807143AA050A47BF51524B /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoEuroTest;
+			productName = GoEuroTest;
+			productReference = 1560DBD81D35180000A63CD6 /* GoEuroTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1560DBD01D35180000A63CD6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Lisa Konysheva";
+				TargetAttributes = {
+					1560DBD71D35180000A63CD6 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ZNT9K69L85;
+					};
+				};
+			};
+			buildConfigurationList = 1560DBD31D35180000A63CD6 /* Build configuration list for PBXProject "GoEuroTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1560DBCF1D35180000A63CD6;
+			productRefGroup = 1560DBD91D35180000A63CD6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1560DBD71D35180000A63CD6 /* GoEuroTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1560DBD61D35180000A63CD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				157BB39F1D381B75005F340D /* GEUTripCell.xib in Resources */,
+				1535F6E71D3BD0B70090BFA8 /* GEUNoConnectionView.xib in Resources */,
+				1560DC0F1D3A48BC00A63CD6 /* Localizable.stringsdict in Resources */,
+				1560DBEB1D35180000A63CD6 /* LaunchScreen.storyboard in Resources */,
+				1560DBE81D35180000A63CD6 /* Assets.xcassets in Resources */,
+				1560DBE61D35180000A63CD6 /* Main.storyboard in Resources */,
+				1560DC0D1D3A47E900A63CD6 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F807143AA050A47BF51524B /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoEuroTest/Pods-GoEuroTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32617ECDB91770901917D77F /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoEuroTest/Pods-GoEuroTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F195BC18BE3F84AAE284DCC /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1560DBD41D35180000A63CD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				157A25691D3B796A00C1C9F4 /* GEUBaseBehavior.m in Sources */,
+				157BB3951D36CBE7005F340D /* GEUTravelModeViewController.m in Sources */,
+				1560DBF51D3519EA00A63CD6 /* GEUTrip.m in Sources */,
+				1535F6E51D3BD0850090BFA8 /* GEUNoConnectionView.m in Sources */,
+				1560DC001D351D1700A63CD6 /* GEUDataService.m in Sources */,
+				1560DC071D35517A00A63CD6 /* GEUUtils.m in Sources */,
+				1560DC171D3A6DA600A63CD6 /* GEUBarMenu.m in Sources */,
+				1560DC1D1D3B6D2500A63CD6 /* GEUShyBarBehavior.m in Sources */,
+				157BB39D1D381B5F005F340D /* GEUTripCell.m in Sources */,
+				1560DC0B1D36682C00A63CD6 /* GEUContainerController.m in Sources */,
+				1560DBE01D35180000A63CD6 /* AppDelegate.m in Sources */,
+				1535F6E11D3BCF2D0090BFA8 /* Reachability.m in Sources */,
+				157A256C1D3B7A6100C1C9F4 /* GEUProxyBehavior.m in Sources */,
+				157BB3991D36D661005F340D /* GEUTravelModeVM.m in Sources */,
+				157BB3A21D381DBD005F340D /* GEUTripCellVM.m in Sources */,
+				1560DBDD1D35180000A63CD6 /* main.m in Sources */,
+				1560DBFD1D351B3100A63CD6 /* GEUConstants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1560DBE41D35180000A63CD6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1560DBE51D35180000A63CD6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1560DBE91D35180000A63CD6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1560DBEA1D35180000A63CD6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1560DBED1D35180000A63CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1560DBEE1D35180000A63CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1560DBF01D35180000A63CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E76FC0EFA6AAD6CB532E3DE /* Pods-GoEuroTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = GoEuroTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = goeuro.test.GoEuroTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1560DBF11D35180000A63CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9DA2A6128E0E2C92D507813 /* Pods-GoEuroTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = GoEuroTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = goeuro.test.GoEuroTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1560DBD31D35180000A63CD6 /* Build configuration list for PBXProject "GoEuroTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1560DBED1D35180000A63CD6 /* Debug */,
+				1560DBEE1D35180000A63CD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1560DBEF1D35180000A63CD6 /* Build configuration list for PBXNativeTarget "GoEuroTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1560DBF01D35180000A63CD6 /* Debug */,
+				1560DBF11D35180000A63CD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1560DBD01D35180000A63CD6 /* Project object */;
+}

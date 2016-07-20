@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%d changes</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@changes@</string>
+		<key>changes</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>Direct</string>
+			<key>one</key>
+			<string>%d change</string>
+			<key>other</key>
+			<string>%d changes</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
